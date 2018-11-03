@@ -11,7 +11,7 @@ class RedirectIfAuthenticated extends Component {
 
   render() {
     const { children } = this.props;
-    return localStorage.token ? <Redirect to="/" /> : children;
+    return localStorage.token ? <Redirect to="/admin" /> : children;
   }
 }
 

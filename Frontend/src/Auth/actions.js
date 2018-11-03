@@ -12,9 +12,9 @@ export const register = (user, history) => {
         body: JSON.stringify({
           email: user.email,
           password: user.password,
-          firstname: user.firstname,
-          lastname: user.lastname,
-          role: user.role
+          organisation: user.organisation,
+          phone: user.phone,
+          website: user.website
         })
       })
       .then(response => response.json())
@@ -37,7 +37,7 @@ export const register = (user, history) => {
 
 export const login = (user, history) => {
   return dispatch => {
-    fetch('http://localhost:3001/users/login',
+    fetch('http://localhost:3001/hmf/users/login',
       {
         method: 'POST',
         headers: {

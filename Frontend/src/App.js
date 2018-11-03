@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import MainScreen from './Screens/MainScreen';
 import LoginScreen from './Screens/LoginScreen';
-import AdminScreen from './Screens/LoginScreen';
+import AdminScreen from './Screens/AdminScreen';
 import RegisterScreen from './Screens/RegisterScreen';
 
 
